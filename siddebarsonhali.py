@@ -6,7 +6,6 @@ root.geometry('400x600')
 root.title('Single-Cell UMAP Viewer')
 menu_bar_colour = '#383838'
 
-# Create a icon
 toggle_icon = tk.PhotoImage(file='toggle.png')
 home_icon = tk.PhotoImage(file='home.png')
 service_icon = tk.PhotoImage(file='service.png')
@@ -24,14 +23,11 @@ def switch_indication(indicator_lb):
     
     indicator_lb.configure(bg='white')
 
-
-# Define menu_bar_frame
 menu_bar_frame = tk.Frame(root, bg=menu_bar_colour)
 menu_bar_frame.pack(side=tk.LEFT, fill=tk.Y, pady=4, padx=3)
 menu_bar_frame.pack_propagate(False)
 menu_bar_frame.configure(width=50)
 
-# Create buttons and indicators
 home_btn = tk.Button(menu_bar_frame, image=home_icon, bg=menu_bar_colour, bd=0, activebackground=menu_bar_colour,
                      command=lambda: switch_indication(indicatoe_lb=home_btn_indicator))
 home_btn.place(x=9, y=70, width=30, height=40)
@@ -66,6 +62,6 @@ about_btn_indicator = tk.Label(menu_bar_frame, bg='white')
 about_btn_indicator.place(x=3, y=310, width=5, height=40)
 
 toggle_menu_btn = tk.Button(menu_bar_frame, image=toggle_icon, bg=menu_bar_colour, bd=0, activebackground=menu_bar_colour)
-toggle_menu_btn.place(x=9, y=10, width=30, height=40)
+toggle_menu_btn.place(x=3, y=10, width=30, height=40)
 
 root.mainloop()
