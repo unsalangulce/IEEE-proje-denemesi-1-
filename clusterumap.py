@@ -4,7 +4,6 @@ adata = sc.read_h5ad("data.h5ad")
 # Verinin genel bilgisini göster
 print(adata)
 
-# İlk birkaç gözlemi ve gen bilgisini incele
 print(adata.obs.head())
 print(adata.var.head())
 
