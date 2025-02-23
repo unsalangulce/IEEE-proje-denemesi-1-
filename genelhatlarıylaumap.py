@@ -10,7 +10,7 @@ if not os.path.exists(data_path):
     raise FileNotFoundError(f"File Not Found: {data_path}")
 
 #upload data
-adata = sc.read_10x_mtx(
+adata = sc.read_h5ad('path/to/your/data.h5ad')(
     data_path,  
     var_names='gene_symbols',  
     cache=True  
