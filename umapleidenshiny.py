@@ -24,11 +24,11 @@ sc.pl.umap(adata, color=["leiden"])
 print(adata.obs)
 print(adata.obs["leiden"])
 print(adata.var)
-print(adata.X)  # Sıkıştırılmış formda olabilir
+print(adata.X)  
+
 sc.pl.umap(adata, color=["leiden", "gene_name"])
 sc.pl.heatmap(adata, var_names=["gene1", "gene2"], groupby="leiden")
 
-# Shiny UI tanımlama
 app_ui = ui.page_fluid(
     ui.input_slider("n", "N", 0, 100, 20),
     ui.output_text_verbatim("txt"),
