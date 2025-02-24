@@ -1,7 +1,7 @@
 
 from shiny import App, render, ui, reactive
 import pandas as pd
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import plotly.express as px
 import logging
 
