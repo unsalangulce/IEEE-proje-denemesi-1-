@@ -3,7 +3,7 @@ from shiny.express import render, input
 import functions as f
 
 app_ui = ui.page_fluid(
-    ui.head_content(ui.tags.link(rel="stylesheet", href="styles.css")),
+    ui.head_content(ui.tags.link(rel="stylesheet", href="styles.css")), #rel modülü, Python ile herhangi bir sistemde pyevent'in arayüzünü, davranışını ve işlevselliğini tamamen taklit eden pyevent için bir yedek modüldür
     ui.h1("UMAP Visulization Tool", class_ = "title"),
     ui.p("Your zip file must contain a h5ad file to create an umap."),
     ui.input_file("file_input", "Upload a zip file.", accept=".zip"),
