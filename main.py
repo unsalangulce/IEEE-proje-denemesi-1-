@@ -11,7 +11,7 @@ app_ui = ui.page_fluid(
     ui.output_image("output_image")
 )
 
-def server(input, output, session):
+def server(input, output, session): #The session object is an environment that can be used to access information and functionality relating to the session.
     
     @output
     @render.text
