@@ -1,9 +1,7 @@
 import shiny 
 import scanpy as sc 
-import zipfile 
-import matplotlib 
+import zipfile  
 import matplotlib.pyplot 
-import os 
 import anndata
 import scipy 
 import time
