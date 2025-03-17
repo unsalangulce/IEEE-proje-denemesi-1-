@@ -42,5 +42,3 @@ def server(input, output, session): #The session object is an environment that c
 
         return {"src": image_path, "alt": "UMAP Visualization"}
     
-app = App(app_ui, server)
-app.run()
